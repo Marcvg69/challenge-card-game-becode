@@ -56,7 +56,7 @@ python3 main.py
 - Players play a card each turn until they run out of cards.
 
 ### Nice-to-Have Features:
-- Interactive gameplay where players choose a card to play.
+- Interactive gameplay where players choose a card to play. (WIP)
 - Game-over conditions and functionality to end the game.
 - Points system where the player with the most powerful card in each round wins.
 - Declare a winner based on points at the end of the game.
