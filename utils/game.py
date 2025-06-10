@@ -59,7 +59,7 @@ class Board:
         _deck.shuffle()
         
         # Distribute the shuffled cards to the players (13 cards each)
-        _deck.distrubute(self.players)
+        _deck.distribute(self.players)
         
         # Initialize the history_cards to be the cards in the deck
         self.history_cards = _deck
