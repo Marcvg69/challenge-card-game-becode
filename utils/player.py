@@ -43,6 +43,12 @@ class Player:
         Returns:
         The card played by the player.
         """
+       
+        if not self.cards:
+        # If the player has no cards left, print a message and return None
+            print(f"{self.name} has no cards left to play!")
+            return None
+
         # Choose a random card from the player's hand
         _card = random.choice(self.cards)
         
@@ -123,4 +129,8 @@ class Deck:
         """
         # Start index for distributing cards
         i = 0
+        for a in players:
+            a.cards = self.cards[i::4]
+            i += 1
+            a.number_of_cards = len(a.cards)
         
