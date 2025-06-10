@@ -64,8 +64,10 @@ class Board:
         # Initialize the history_cards to be the cards in the deck
         self.history_cards = _deck
 
-        # Loop over 13 turns (since each player has 13 cards)
-        for t in range(0, 13):
+        #Calculate number_of_turns
+        number_of_turns = 52 // len(self.players)
+        # Loop over number_of_turns 
+        for t in range(0, int(number_of_turns)):
             print("____________________________")
             # Print the current turn number and remaining cards in the deck
             print(
