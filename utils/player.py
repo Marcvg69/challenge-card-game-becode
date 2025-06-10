@@ -122,15 +122,16 @@ class Deck:
     def distribute(self, players: list[Player]):
         """
         Distributes 13 cards to each player.
-        - There are 4 players, each receiving 13 cards.
+        - There are j players, each receiving 13 cards.
         
         Args:
         :players: List of Player objects who will receive cards.
         """
         # Start index for distributing cards
         i = 0
+        j = len(players)
         for a in players:
-            a.cards = self.cards[i::4]
+            a.cards = self.cards[i::j]
             i += 1
             a.number_of_cards = len(a.cards)
         
