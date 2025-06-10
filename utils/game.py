@@ -74,7 +74,7 @@ class Board:
                 "Turn: "
                 + str(t + 1)
                 + " / Cards Left: "
-                + str(len(self.history_cards.cards))
+                + str(len(self.history_cards.cards)-len(self.players))
             )
 
             # Loop through each player and have them play a card

@@ -32,7 +32,6 @@ def get_players():
 
 # Get number of players and their names (max 52 players)
 _players = get_players()
-print(f"Players in the game: {_players}")
 
 """
 Create the board and start the game 
